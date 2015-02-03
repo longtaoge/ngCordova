@@ -7,11 +7,11 @@ angular.module('demo.device.ctrl', [])
       try {
         document.addEventListener("deviceready", function () {
           $scope.available = $cordovaDevice.getDevice().available;
-          $scope.cordova = $cordovaDevice.getCordova();
-          $scope.model = $cordovaDevice.getModel();
-          $scope.platform = $cordovaDevice.getPlatform();
-          $scope.uuid = $cordovaDevice.getUUID();
-          $scope.version = $cordovaDevice.getVersion();
+          $scope.cordova = $cordovaDevice.getCordova();  //Crodova 版本
+          $scope.model = $cordovaDevice.getModel();//手机型号
+          $scope.platform = $cordovaDevice.getPlatform();//平台
+          $scope.uuid = $cordovaDevice.getUUID();//设备识别号
+          $scope.version = $cordovaDevice.getVersion();//系统版本号
         }, false);
       }
       catch (err) {
