@@ -40,7 +40,7 @@ angular.module('demo', [
   'demo.toast.ctrl',
   'demo.touchid.ctrl',
   'demo.vibration.ctrl',
-  'demo.progres.ctrl'
+  'demo.progress.ctrl'
 ])
 
   .run(function ($rootScope, $ionicPlatform, $cordovaNetwork, $cordovaBatteryStatus, $cordovaLocalNotification, $cordovaPush) {
@@ -360,10 +360,10 @@ angular.module('demo', [
         templateUrl: 'app/vibration/vibration.html',
         controller: "VibrationCtrl"
       })
-        .state('progres', {
-        url: '/progres',
-        templateUrl: 'app/progress/progres.html',
-        controller: "ProgresCtrl"
+        .state('progress', {
+        url: '/progress',
+        templateUrl: 'app/progress/progress.html',
+        controller: "ProgressCtrl"
       });
 
 

@@ -5258,7 +5258,7 @@ angular.module('ngCordova.plugins.progressIndicator', [])
 
       showSimple: function (_dim) {
         var dim = _dim || false;
-        return ProgressIndicator.showSimple(dim);
+             return ProgressIndicator.showSimple(dim);
       },
 
       showSimpleWithLabel: function (_dim, _label) {
