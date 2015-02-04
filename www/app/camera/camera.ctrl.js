@@ -12,9 +12,9 @@ angular.module('demo.camera.ctrl', [])
               targetWidth: 500, //图像宽度（像素）
               targetHeight: 500,//图像高度（像素）
             //  popoverOptions: CameraPopoverOptions,//指定位置的选项 只有ios支持
-              saveToPhotoAlbum: false, //是否保存到设备的相册
-              cameraDirection:1 //前后摄像头选项 0为后似乎不起作用
-              // mediaType  //	媒体类型
+              saveToPhotoAlbum: true, //是否保存到设备的相册
+              cameraDirection:1//前后摄像头选项 0为后似乎不起作用
+              //, mediaType:1 //	媒体类型
       };
 
       // udpate camera image directive

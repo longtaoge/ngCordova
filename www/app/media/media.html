@@ -1,12 +1,13 @@
 <ion-view title="Media">
-  <ion-content padding="true">
+    <ion-content padding="true">
 
-    <br>
-    <div class="button button-block  button-positive" ng-click="playMedia()">Play</div>
-   <div class="button button-block  button-positive" ng-click="recordAudio()">recordAudio</div>
-      <div class="button button-block  button-positive" ng-click="playMedia2()">Play</div>
+        <br>
 
-    <p>{{media}}</p>
-    <div class="button button-block button-positive" ng-click="stopMedia()">Stop</div>
-  </ion-content>
+        <div class="button button-block  button-positive" ng-click="playMedia()">Play 播放本地音频</div>
+        <div class="button button-block  button-positive" ng-click="recordAudio()">recordAudio录音</div>
+        <div class="button button-block  button-positive" ng-click="stoprecordAudio()">stoprecordAudio停止录音</div>
+        <div class="button button-block  button-positive" ng-click="playSound()">playrecod播放录制的音频</div>
+
+        <div class="button button-block button-positive" ng-click="stopMedia()">Stop停止播放</div>
+    </ion-content>
 </ion-view>
