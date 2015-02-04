@@ -1,6 +1,44 @@
-<ion-view title="Local Notification">
-  <ion-content padding="true">
+<ion-view title="Local Notification 本地通知">
+    <ion-content padding="true">
 
-    <button class="button button-block" ng-click="addNotification()">Add Notification</button>
-  </ion-content>
+
+        <div class="padding">
+            <button class="button button-block button-balanced" ng-click="addNotification()">Add Notification 添加通知
+            </button>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-balanced" ng-click="cancelNotification()">cancelNotification
+            </button>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-balanced" ng-click="cancelAllNotification()">
+                cancelAllNotification
+            </button>
+        </div>
+
+        <div class="padding">
+            <button class="button button-block button-balanced" ng-click="checkIfIsScheduled()">checkIfIsScheduled
+            </button>
+        </div>
+
+      <!--  <div class="padding">
+            <button class="button button-block button-balanced" ng-click="getNotificationIds()">getNotificationIds
+            </button>
+        </div>-->
+
+      <!--  <div class="padding">
+            <button class="button button-block button-balanced" ng-click="checkIfIsTriggered()">checkIfIsTriggered
+            </button>
+        </div>-->
+      <!--  <div class="padding">
+            <button class="button button-block button-balanced" ng-click="setDefaultOption()">setDefaultOptions</button>
+        </div>
+
+        <div class="padding">
+            <button class="button button-block button-balanced" ng-click="getTriggeredIds()">getTriggeredIds</button>
+        </div>
+-->
+
+
+    </ion-content>
 </ion-view>
