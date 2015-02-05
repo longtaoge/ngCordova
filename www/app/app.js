@@ -10,6 +10,7 @@ angular.module('demo', [
     'demo.barcodeScanner.ctrl',
     'demo.batteryStatus.ctrl',
     'demo.camera.ctrl',
+    'demo.capture.ctrl',
     'demo.clipboard.ctrl',
     'demo.contacts.ctrl',
     'demo.datePicker.ctrl',
@@ -374,9 +375,14 @@ angular.module('demo', [
                 url: '/appversion',
                 templateUrl: 'app/appversion/appversion.html',
                 controller: "AppVersionCtrl"
-            });
+            }).state('capture', {
+                url: '/capture',
+                templateUrl: 'app/capture/capture.html',
+                controller: "CaptureCtrl"
+            })
 
 
+        ;
 
 
         $urlRouterProvider.otherwise('/menu');
