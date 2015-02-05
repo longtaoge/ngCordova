@@ -15,7 +15,7 @@ angular.module('demo.deviceMotion.ctrl', [])
 
 
     $scope.watchAcceleration = function () {
-      var options = { frequency: 3000 };  // Update every 3 seconds
+      var options = { frequency: 50 };  // Update every 3 seconds
 
       $scope.this_watch = $cordovaDeviceMotion.watchAcceleration(options);
 
