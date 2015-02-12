@@ -2,12 +2,12 @@
 	<ion-content>
 		<div class="card">
 			<div class="item">
-				<p>This is some text to be copied</p>
+				<p>{{srcdata}}</p>
 			</div>
 		</div>
 
 		<div class="padding">
-			<button class="button button-block button-positive" ng-click="copy()">
+			<button class="button button-block button-positive" ng-click="copys()">
 				Copy!
 			</button>
 		</div>
@@ -16,13 +16,13 @@
 		<div class="list">
 			<label class="item item-input">
 				<input type="text"
-				       ng-model="data.value"
+				       ng-model=targetdata
 				       placeholder="Paste the text here">
 			</label>
 		</div>
 
 		<div class="padding">
-			<button class="button button-block button-positive" ng-click="copy()">
+			<button class="button button-block button-positive" ng-click="paste()">
 				Paste!
 			</button>
 		</div>
