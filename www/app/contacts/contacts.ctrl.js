@@ -15,6 +15,7 @@ angular.module('demo.contacts.ctrl', [])
       document.addEventListener("deviceready", function () {
         $cordovaContacts.save(contact).then(function (result) {
           console.log(JSON.stringify(result));
+            alert(JSON.stringify(result));
         })
       }, false);
     };
@@ -24,6 +25,7 @@ angular.module('demo.contacts.ctrl', [])
       document.addEventListener("deviceready", function () {
         $cordovaContacts.remove(contact).then(function (result) {
           console.log(JSON.stringify(result));
+            alert(JSON.stringify(result));
         })
       }, false);
     };

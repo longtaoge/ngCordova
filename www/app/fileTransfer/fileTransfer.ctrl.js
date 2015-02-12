@@ -1,19 +1,14 @@
 angular.module('demo.fileTransfer.ctrl', [])
-/*http://www.telerik.com/sfimages/default-source/logos/app_builder.png*/
   .controller('FileTransferCtrl', function ($scope, $timeout, $cordovaFileTransfer) {
-
-        $scope.downloadProgress =1;
-
-        document.addEventListener('deviceready', function () {
-
-            var url = "http://www.telerik.com/sfimages/default-source/logos/app_builder.png";
-            var targetPath = cordova.file.documentsDirectory + "testImage.png";
-            var trustHosts = true;
-            var options = {};
-
-
-           /* $scope.downloadFile=function(){ };*/
-
+          $scope.downloadFile=function(){
+              //要下载文件的URL
+              var url = "http://cdn.wall-pix.net/albums/art-space/00030109.jpg";
+              //文件的存储路径
+              var targetPath = cordova.file.externalRootDirectory + url.substr(url.lastIndexOf('/')+1);
+              //接受所有安全证书
+              var trustHosts = true;
+              //选项
+              var options = {};
                 $cordovaFileTransfer.download(url, targetPath, null, trustHosts)
                     .then(function(result) {
                         // Success!
@@ -24,50 +19,36 @@ angular.module('demo.fileTransfer.ctrl', [])
                             $scope.downloadProgress = (progress.loaded / progress.total) * 100;
                         })
                     });
+          };
 
 
-
-
-        }, false);
-
-
-      /*  document.addEventListener('deviceready', function () {
+        $scope.UploadFileFile=function(){
+            //要上传文件的URL
+            var  server= "http://192.168.191.1/androidWeb/UploadFile";
+            //文件的本地存储路径
+            var filePath = cordova.file.externalRootDirectory +"00030109.jpg";
+            //接受所有安全证书
+            var trustHosts = true;
+            //选项
+            var options = {};
 
             $cordovaFileTransfer.upload(server, filePath, options)
                 .then(function(result) {
                     // Success!
+                    alert("成功");
                 }, function(err) {
                     // Error
+                    alert("失败");
                 }, function (progress) {
                     // constant progress updates
+                    $scope.downloadProgress1 = (progress.loaded / progress.total) * 100;
                 });
 
-        }, false);
-*/
 
 
-        /*
-            $scope.downloadFile = function () {
 
-                    var url = "http://b.hiphotos.baidu.com/baike/c0%3Dbaike72%2C5%2C5%2C72%2C24/sign=a0794c174fc2d562e605d8bf8678fb8a/d01373f082025aafbd4e9cbcfbedab64034f1a4c.jpg";
-                    var targetPath = cordova.file.documentsDirectory + "testImage.png";
-                    var trustHosts = true;
-                    var options = {};
 
-                    $cordovaFileTransfer.download(url, targetPath, options, trustHosts)
-                        .then(function(result) {
-                            // Success!
-                            alert("Success");
-                        }, function(err) {
-                            alert("err");
-                            // Error
-                        }, function (progress) {
-                            $timeout(function () {
-                                $scope.downloadProgress = (progress.loaded / progress.total) * 100;
-                            })
-                        });
-            };
-        */
+        }
 
   });
 
