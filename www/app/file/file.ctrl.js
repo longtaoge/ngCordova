@@ -1,41 +1,28 @@
 angular.module('demo.file.ctrl', [])
 
-  .controller('FileCtrl', function ($scope, $log, $cordovaFile) {
-
-
-   /* document.addEventListener('deviceready', function () {
-      $cordovaFile.checkDir("/directory").then(function (success) {
-        console.log('success ' + JSON.stringify(success));
-        $scope.isDir = success;
-      }, function (error) {
-        console.log('success ' + JSON.stringify(error));
-        $scope.isDir = error;
-      })
-    })
-*/
-
-        document.addEventListener('deviceready', function () {
+  .controller('FileCtrl', function ($scope,$cordovaFile) {
 
             $scope.checkdir=function(){
-                // CHECK
-                $cordovaFile.checkDir(cordova.file.dataDirectory, "dir/other_dir")
+                // 检查指定路径下的目录是否存在
+                $cordovaFile.checkDir(cordova.file.externalRootDirectory,"dir/other_dir")
                     .then(function (success) {
-                        // success
-                        alert("成功");
+                       //  success
+                        alert("成功"+success);
                     }, function (error) {
                         // error
-                        alert("error"+error.toLocaleString());
+                        alert("error");
                     });
 
             };
             $scope.checkFile=function(){
-                $cordovaFile.checkFile(cordova.file.dataDirectory, "some_file.txt")
+               //$cordovaFile.checkFile(cordova.file.dataDirectory, "some_file.txt")
+                $cordovaFile.checkFile(cordova.file.externalRootDirectory, "abc.png")
                     .then(function (success) {
                         // success
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error"+error.toLocaleString());
+                        alert("error");
                     });
 
             };
@@ -190,7 +177,7 @@ angular.module('demo.file.ctrl', [])
                     });
             };
 
-        });
+
 
 
 
