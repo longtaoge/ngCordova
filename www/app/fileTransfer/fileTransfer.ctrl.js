@@ -23,10 +23,11 @@ angular.module('demo.fileTransfer.ctrl', [])
 
 
         $scope.UploadFileFile=function(){
+            var url = "http://cdn.wall-pix.net/albums/art-space/00030109.jpg";
             //要上传文件的URL
             var  server= "http://192.168.191.1/androidWeb/UploadFile";
             //文件的本地存储路径
-            var filePath = cordova.file.externalRootDirectory +"00030109.jpg";
+            var filePath = cordova.file.externalRootDirectory +url.substr(url.lastIndexOf('/')+1);
             //接受所有安全证书
             var trustHosts = true;
             //选项
@@ -35,6 +36,7 @@ angular.module('demo.fileTransfer.ctrl', [])
             $cordovaFileTransfer.upload(server, filePath, options)
                 .then(function(result) {
                     // Success!
+                    $scope.downloadProgress1 = (100/100) * 100;
                     alert("成功");
                 }, function(err) {
                     // Error

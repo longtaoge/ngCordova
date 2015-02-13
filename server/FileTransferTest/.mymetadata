@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="FileTransferTest"
+  id="myeclipse.1423790938092"
+  context-root="/FileTtrasferTest"
+  j2ee-spec="5.0"
+  archive="FileTransferTest.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
