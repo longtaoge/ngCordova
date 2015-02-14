@@ -1,74 +1,72 @@
 <ion-view title="progress进度条">
-	<ion-content padding="true">
-    <div class="card">
-
-
-            <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showSimple()">showSimple()</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
+    <ion-content class="padding" ng-controller="ProgressCtrl">
+<!-- 说明，本插件代码源自插件官方Dome 并未在IOS真机上进行测试，由于暂未支持Android 平台，所以，如果有什么问题可参见 https://github.com/pbernasconi/cordova-progressIndicator/ 解决-->
+        <div class="list">
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-load-b"></i>
+                Simple
+                <div class="button button-positive" ng-click="loadProgressIndicator('indeterminate-simple')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-load-b"></i>
+                Simple then hide
+                <div class="button button-positive" ng-click="loadProgressIndicator('indeterminate-simple-then-hide')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-load-b"></i>
+                Simple - Label
+                <div class="button  button-positive" ng-click="loadProgressIndicator('indeterminate-label')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-load-b"></i>
+                Simple - Label - Detail
+                <div class="button button-positive" ng-click="loadProgressIndicator('indeterminate-label-detail')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-ios7-loop"></i>
+                Determinate
+                <div class="button button-positive" ng-click="loadProgressIndicator('determinate-simple')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-ios7-loop"></i>
+                Determinate - Label
+                <div class="button  button-positive" ng-click="loadProgressIndicator('determinate-simple-label')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-load-c"></i>
+                Annular
+                <div class="button button-positive" ng-click="loadProgressIndicator('determinate-annular')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-load-c"></i>
+                Annular - Label
+                <div class="button button-positive" ng-click="loadProgressIndicator('determinate-annular-label')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-toggle"></i>
+                Bar
+                <div class="button  button-positive" ng-click="loadProgressIndicator('determinate-bar')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-toggle"></i>
+                Bar - Label
+                <div class="button button-positive" ng-click="loadProgressIndicator('determinate-bar-label')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-ios7-checkmark-outline"></i>
+                Success
+                <div class="button  button-positive" ng-click="loadProgressIndicator('success')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-ios7-checkmark-outline"></i>
+                Text Top
+                <div class="button  button-positive" ng-click="loadProgressIndicator('text-top')">try</div>
+            </div>
+            <div class="item item-icon-left item-button-right">
+                <i class="icon ion-ios7-checkmark-outline"></i>
+                Text Bottom
+                <div class="button  button-positive" ng-click="loadProgressIndicator('text-bottom')">try</div>
+            </div>
         </div>
-
-               <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showSimpleWithLabel()">showSimpleWithLabel(true, "Loading")</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏()</a>
-        </div>
-
-               <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showSimpleWithLabelDetail()">showSimpleWithLabelDetail(true, "Loading", "detail")</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
-        </div>
-
-               <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showDeterminate()">showDeterminate(false, 100000)</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
-        </div>
-
-               <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showDeterminateWithLabel()">showDeterminateWithLabel(true, 50000, "Loading")</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
-        </div>
-          <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showAnnular()">   showAnnular(true, 50000)</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
-        </div>
-          <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showAnnularWithLabel()">showAnnularWithLabel(false, 100000, "Loading")</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
-        </div>
-          <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showBar()"> showBar(true, 50000)e</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
-        </div>
-          <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showBarWithLabel()"> showBarWithLabel(false, 100000, "Loading")</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
-        </div>
-          <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showSuccess()"> showSuccess(true, "Success!")</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
-        </div>
-    <div class="item button-bar">
-                <a class="button  button-positive " ng-click="showText()">  showText(false, 100000, "Loading")</a>
-
-                <a class="button button-balanced   " ng-click="unshowSimple()">hide 隐藏</a>
-        </div>
-
-
-
-
-    </div>
-
-
-
-	</ion-content>
+    </ion-content>
 </ion-view>
