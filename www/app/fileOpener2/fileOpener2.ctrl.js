@@ -50,8 +50,7 @@ angular.module('demo.fileOpener2.ctrl', [])
             });
         };
 
-        $scope.installed=function(){
-
+        $scope.installed=function(){//检查是否安装了指定应用
             $cordovaFileOpener2.appIsInstalled('com.ionicframework.ngcordova488773').then(function(res) {
                 if (res.status === 0) {
                     // Adobe Reader is not installed.
@@ -61,11 +60,5 @@ angular.module('demo.fileOpener2.ctrl', [])
                     alert("安装了");
                 }
             });
-
-
-
         }
-
-
-
     });

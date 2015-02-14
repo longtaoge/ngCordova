@@ -19,6 +19,7 @@
     "http://github.com/VitaliiBlagodir/cordova-plugin-datepicker",
     "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
     "org.apache.cordova.statusbar",
-    "org.apache.cordova.battery-status"
+    "org.apache.cordova.battery-status",
+    "https://github.com/pwlin/cordova-plugin-file-opener2"
   ]
 }

@@ -4,7 +4,7 @@ angular.module('demo.fileTransfer.ctrl', [])
               //要下载文件的URL
               var url = "http://cdn.wall-pix.net/albums/art-space/00030109.jpg";
               //文件的存储路径
-              var targetPath = cordova.file.externalRootDirectory + url.substr(url.lastIndexOf('/')+1);
+              var targetPath =  + url.substr(url.lastIndexOf('/')+1);
               //接受所有安全证书
               var trustHosts = true;
               //选项
