@@ -3,7 +3,7 @@ angular.module('demo.deviceMotion.ctrl', [])
   .controller('DeviceMotionCtrl', function ($scope, $cordovaDeviceMotion) {
         $scope.getAcceleration=function(){
             $cordovaDeviceMotion
-                .getCurrentAcceleration()//获取当前的方位值
+                .getCurrentAcceleration()//获取当前的加速度值
                 .then(function (motion) {
                     $scope.motion = motion;
                 }, function (err) {
