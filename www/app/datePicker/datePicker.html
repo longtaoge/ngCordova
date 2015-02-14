@@ -4,7 +4,7 @@
 		<div class="list">
 
 			<div class="item">
-                <i class="icon ion-clock"></i> {{todo_date | date:"MM月dd日"}} <i class="icon">
+                <i class="icon ion-clock"></i> {{todo_date | date:"MM月dd日"}}
 				 <br>
 
 				<button class="button button-block button-positive"
@@ -12,13 +12,22 @@
 			</div>
 
 			<div class="item">
-                <i class="icon ion-clock"></i> {{todo_date | date:"HH点mm分ss秒"}} <i class="icon">
+                <i class="icon ion-clock"></i> {{todo_date | date:"HH点mm分ss秒"}}
 				 <br>
 
 				<button class="button button-block button-positive"
 					ng-click="picktime()">pick time</button>
 
 			</div>
+	<div class="item">
+                <i class="icon ion-clock"></i> {{todo_date | date:"yyyy年MM月dd日HH点mm分ss秒"}}
+				 <br>
+
+				<button class="button button-block button-positive"
+					ng-click="select()">select time</button>
+
+			</div>
+
 
 		</div>
 
