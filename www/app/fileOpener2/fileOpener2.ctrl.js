@@ -20,6 +20,25 @@ angular.module('demo.fileOpener2.ctrl', [])
           $scope.logs = 'error code: '+error.code+' , message: '+error.message;
         }
       );
+
+
+        $scope.installApk=function(){
+
+
+            alert('installApk');
+
+
+        }
+
+
+
+
+
+
+
+
+
+
     };
 
   });
