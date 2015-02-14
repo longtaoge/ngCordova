@@ -1,21 +1,31 @@
 <ion-view title="FileOpener2">
-  <ion-content padding="true">
+    <ion-content padding="true">
 
-    <div class="list">
-      <label class="item item-input">
-        <input type="text" placeholder="packageID" ng-model="packageId">
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="type" ng-model="type">
-      </label>
-      <button class="button button-block button-positive" ng-click="open()">
-        Open
-      </button>  <button class="button button-block button-positive" ng-click="installApk()">
-        InstallApk 安装APK
-      </button>
-    </div>
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" placeholder="packageID" ng-model="packageId">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="type" ng-model="type">
+            </label>
+            <button class="button button-block button-positive" ng-click="open()">
+                InstallApk 安装APK
+            </button>
+            <!-- <button class="button button-block button-positive" ng-click="installApk()">
+             InstallApk 安装APK
+           </button>-->
+            <button class="button button-block button-positive" ng-click="openPDF()">
+                打开PDF
+            </button>
+            <button class="button button-block button-positive" ng-click="uninstallApp()">
+                卸载应用
+            </button>
+            <button class="button button-block button-positive" ng-click="installed()">
+                检查是否安装了指定应用
+            </button>
+        </div>
 
-    {{ logs }}
+        {{ logs }}
 
-  </ion-content>
+    </ion-content>
 </ion-view>
