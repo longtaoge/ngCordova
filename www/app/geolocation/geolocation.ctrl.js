@@ -13,6 +13,7 @@ angular.module('demo.geolocation.ctrl', [])
           // lat = position.coords.latitude
         }, function (err) {
           console.log("unable to find location");
+              alert("unable to find location");
           $scope.errorMsg = "Error : " + err.message;
         });
     };

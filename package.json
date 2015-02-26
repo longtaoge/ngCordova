@@ -21,6 +21,8 @@
     "org.apache.cordova.statusbar",
     "org.apache.cordova.battery-status",
     "https://github.com/pwlin/cordova-plugin-file-opener2",
-    "org.apache.cordova.device-orientation"
+    "org.apache.cordova.device-orientation",
+    "org.apache.cordova.geolocation",
+    "org.apache.cordova.globalization"
   ]
 }

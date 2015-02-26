@@ -7,6 +7,7 @@ angular.module('demo.globalization.ctrl', [])
       $cordovaGlobalization.getPreferredLanguage().then(
         function (result) {
           $scope.language = result.value;
+            alert("language"+result.value);
         },
         function (error) {
           $scope.language = err.message;
@@ -15,6 +16,7 @@ angular.module('demo.globalization.ctrl', [])
       $cordovaGlobalization.getLocaleName().then(
         function (result) {
           $scope.locale = result.value;
+            alert("locale"+result.value);
         },
         function (error) {
           $scope.locale = err.message;
@@ -23,6 +25,7 @@ angular.module('demo.globalization.ctrl', [])
       $cordovaGlobalization.getFirstDayOfWeek().then(
         function (result) {
           $scope.fdow = result.value;
+            alert("FirstDoyOfWeek"+result.value);
         },
         function (error) {
           $scope.fdow = err.message;
