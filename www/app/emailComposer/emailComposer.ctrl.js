@@ -11,7 +11,6 @@ angular.module('demo.emailComposer.ctrl', [])
     }, false);
 
 
-
     $cordovaEmailComposer.isAvailable().then(function () {
       // is available
     }, function () {

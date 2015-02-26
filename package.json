@@ -26,6 +26,8 @@
     "org.apache.cordova.globalization",
     "https://github.com/dferrell/plugins-application-preferences.git",
     "https://github.com/katzer/cordova-plugin-printer.git",
-    "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git"
+    "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git",
+    "org.apache.cordova.contacts",
+    "https://github.com/wymsee/cordova-imagePicker.git"
   ]
 }

@@ -42,7 +42,9 @@ angular.module('demo', [
     'demo.toast.ctrl',
     'demo.touchid.ctrl',
     'demo.vibration.ctrl',
-    'demo.progress.ctrl'
+    'demo.progress.ctrl',
+    'demo.imagepicker.ctrl'
+
 ])
 
     .run(function ($rootScope, $ionicPlatform, $cordovaNetwork, $cordovaLocalNotification, $cordovaPush,$cordovaBatteryStatus) {
@@ -380,6 +382,11 @@ angular.module('demo', [
                 url: '/capture',
                 templateUrl: 'app/capture/capture.html',
                 controller: "CaptureCtrl"
+            })
+            .state('imagepicker', {
+                url: '/imagepicker',
+                templateUrl: 'app/imagepicker/imagepicker.html',
+                controller: "ImagepickerCtrl"
             })
 
 

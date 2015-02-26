@@ -21,33 +21,38 @@
       </div>
     </div>
 
-    <div class="list">
+    <div class="list" ng-show="false">
       <label class="item item-input item-floating-label">
         <span class="input-label">Create new Contact</span>
         <input type="text" placeholder="Create new Contact" ng-model="newContact">
       </label>
     </div>
 
-    <div class="padding-horizontal">
+    <div class="padding-horizontal" ng-show="false">
       <button class="button button-block button-positive" ng-click="saveContact(newContact)">
         Create new Contact
       </button>
     </div>
     <br>
 
-    <div class="list">
+    <div class="list" ng-show="false">
       <label class="item item-input item-floating-label">
         <span class="input-label">Remove a Contact</span>
         <input type="text" placeholder="Remove a Contact" ng-model="oldContact">
       </label>
     </div>
 
-    <div class="padding-horizontal">
+    <div class="padding-horizontal" ng-show="false">
       <button class="button button-block button-assertive" ng-click="removeContact(contact)">
         Remove Contact
       </button>
     </div>
 
+      <div class="padding-horizontal">
+          <button class="button button-block button-positive" ng-click="find()">
+             find Contact 寻找联系人
+          </button>
+      </div>
 
   </ion-content>
 </ion-view>
