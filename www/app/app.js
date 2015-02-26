@@ -45,7 +45,7 @@ angular.module('demo', [
     'demo.progress.ctrl'
 ])
 
-    .run(function ($rootScope, $ionicPlatform, $cordovaNetwork, $cordovaBatteryStatus, $cordovaLocalNotification, $cordovaPush) {
+    .run(function ($rootScope, $ionicPlatform, $cordovaNetwork, $cordovaLocalNotification, $cordovaPush,$cordovaBatteryStatus) {
 
         $ionicPlatform.ready(function ($cordovaAppRateProvider) {
 
@@ -103,7 +103,8 @@ angular.module('demo', [
 
             $rootScope.$on("$cordovaBatteryStatus:status", function (event, status) {
                 //alert("status: " + status);
-            })
+            });
+
         })
     })
 
