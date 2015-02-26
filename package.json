@@ -25,6 +25,7 @@
     "org.apache.cordova.geolocation",
     "org.apache.cordova.globalization",
     "https://github.com/dferrell/plugins-application-preferences.git",
-    "https://github.com/katzer/cordova-plugin-printer.git"
+    "https://github.com/katzer/cordova-plugin-printer.git",
+    "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git"
   ]
 }
