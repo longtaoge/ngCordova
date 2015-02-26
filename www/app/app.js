@@ -43,7 +43,8 @@ angular.module('demo', [
     'demo.touchid.ctrl',
     'demo.vibration.ctrl',
     'demo.progress.ctrl',
-    'demo.imagepicker.ctrl'
+    'demo.imagepicker.ctrl',
+    'demo.actionSheet.ctrl'
 
 ])
 
@@ -387,6 +388,11 @@ angular.module('demo', [
                 url: '/imagepicker',
                 templateUrl: 'app/imagepicker/imagepicker.html',
                 controller: "ImagepickerCtrl"
+            })
+    .state('actionsheet', {
+                url: '/actionsheet',
+                templateUrl: 'app/actionSheet/actionSheet.html',
+                controller: "ActionSheetCtrl"
             })
 
 

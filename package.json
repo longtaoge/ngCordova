@@ -28,6 +28,7 @@
     "https://github.com/katzer/cordova-plugin-printer.git",
     "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git",
     "org.apache.cordova.contacts",
-    "https://github.com/wymsee/cordova-imagePicker.git"
+    "https://github.com/wymsee/cordova-imagePicker.git",
+    "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git"
   ]
 }
