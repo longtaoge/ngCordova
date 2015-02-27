@@ -34,6 +34,7 @@
     "https://github.com/aharris88/phonegap-sms-plugin.git",
     "https://github.com/cordova-sms/cordova-sms-plugin.git",
     "https://github.com/Paldom/PinDialog.git",
-    "https://github.com/driftyco/ionic-plugins-keyboard.git"
+    "https://github.com/driftyco/ionic-plugins-keyboard.git",
+    "https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git"
   ]
 }

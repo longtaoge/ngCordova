@@ -48,7 +48,8 @@ angular.module('demo', [
     'demo.spinnerdialog.ctrl',
     'demo.sms.ctrl',
     'demo.pindialog.ctrl',
-    'demo.keyboard.ctrl'
+    'demo.keyboard.ctrl',
+    'demo.calendar.ctrl'
 
 ])
 
@@ -412,12 +413,17 @@ angular.module('demo', [
                 url: '/pindialog',
                 templateUrl: 'app/pindialog/pindialog.html',
                 controller: "PinDialogCtrl"
-            }) .state('keyboard', {
+            })
+            .state('keyboard', {
                 url: '/keyboard',
                 templateUrl: 'app/keyboard/keyboard.html'
-               // controller: ""
+                // controller: ""
             })
-
+            .state('calendar', {
+                url: '/calendar',
+                templateUrl: 'app/calendar/calendar.html',
+                controller: "CalendarCtrl"
+            })
 
         ;
 
