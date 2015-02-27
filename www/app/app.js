@@ -46,7 +46,9 @@ angular.module('demo', [
     'demo.imagepicker.ctrl',
     'demo.actionSheet.ctrl',
     'demo.spinnerdialog.ctrl',
-    'demo.sms.ctrl'
+    'demo.sms.ctrl',
+    'demo.pindialog.ctrl',
+    'demo.keyboard.ctrl'
 
 ])
 
@@ -405,6 +407,15 @@ angular.module('demo', [
                 url: '/sms',
                 templateUrl: 'app/sms/sms.html'
 
+            })
+            .state('pindialog', {
+                url: '/pindialog',
+                templateUrl: 'app/pindialog/pindialog.html',
+                controller: "PinDialogCtrl"
+            }) .state('keyboard', {
+                url: '/keyboard',
+                templateUrl: 'app/keyboard/keyboard.html'
+               // controller: ""
             })
 
 

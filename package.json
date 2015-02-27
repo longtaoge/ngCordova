@@ -32,6 +32,8 @@
     "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git",
     "https://github.com/Paldom/SpinnerDialog.git",
     "https://github.com/aharris88/phonegap-sms-plugin.git",
-    "https://github.com/cordova-sms/cordova-sms-plugin.git"
+    "https://github.com/cordova-sms/cordova-sms-plugin.git",
+    "https://github.com/Paldom/PinDialog.git",
+    "https://github.com/driftyco/ionic-plugins-keyboard.git"
   ]
 }
