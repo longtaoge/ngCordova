@@ -45,7 +45,8 @@ angular.module('demo', [
     'demo.progress.ctrl',
     'demo.imagepicker.ctrl',
     'demo.actionSheet.ctrl',
-    'demo.spinnerdialog.ctrl'
+    'demo.spinnerdialog.ctrl',
+    'demo.sms.ctrl'
 
 ])
 
@@ -399,6 +400,11 @@ angular.module('demo', [
                 url: '/spinnerdialog',
                 templateUrl: 'app/spinnerdialog/spinnerdialog.html',
                 controller: "SpinnerDialogCtrl"
+            })
+            .state('sms', {
+                url: '/sms',
+                templateUrl: 'app/sms/sms.html'
+
             })
 
 

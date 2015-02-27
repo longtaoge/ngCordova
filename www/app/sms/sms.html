@@ -1,0 +1,27 @@
+<ion-view title="SendSms">
+	<ion-content scroll="false" padding="true">
+
+        <form ng-submit="sendSms()" ng-controller="SmsCtrl">
+
+            <div class="list" >
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">输入手机号码</span>
+                    <input name="number" type="text" placeholder="请输入手机号码" ng-model="number">
+                </label>
+            </div>
+            <div class="list" >
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">请输入短信内容</span>
+                    <input name="message" type="text" placeholder="请输入短信内容" ng-model="message">
+                </label>
+            </div>
+
+
+            <input type="submit" class="button button-block button-positive" >
+        </form>
+
+
+       <!-- <button ng-click="sendSms()" class="button button-block button-positive">SendSms</button>-->
+
+	</ion-content>
+</ion-view>
