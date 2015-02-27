@@ -29,6 +29,9 @@
     "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git",
     "org.apache.cordova.contacts",
     "https://github.com/wymsee/cordova-imagePicker.git",
-    "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git"
+    "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git",
+    "https://github.com/Paldom/SpinnerDialog.git",
+    "https://github.com/aharris88/phonegap-sms-plugin.git",
+    "https://github.com/cordova-sms/cordova-sms-plugin.git"
   ]
 }

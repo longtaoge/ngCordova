@@ -44,11 +44,12 @@ angular.module('demo', [
     'demo.vibration.ctrl',
     'demo.progress.ctrl',
     'demo.imagepicker.ctrl',
-    'demo.actionSheet.ctrl'
+    'demo.actionSheet.ctrl',
+    'demo.spinnerdialog.ctrl'
 
 ])
 
-    .run(function ($rootScope, $ionicPlatform, $cordovaNetwork, $cordovaLocalNotification, $cordovaPush,$cordovaBatteryStatus) {
+    .run(function ($rootScope, $ionicPlatform, $cordovaNetwork, $cordovaLocalNotification, $cordovaPush, $cordovaBatteryStatus) {
 
         $ionicPlatform.ready(function ($cordovaAppRateProvider) {
 
@@ -389,10 +390,15 @@ angular.module('demo', [
                 templateUrl: 'app/imagepicker/imagepicker.html',
                 controller: "ImagepickerCtrl"
             })
-    .state('actionsheet', {
+            .state('actionsheet', {
                 url: '/actionsheet',
                 templateUrl: 'app/actionSheet/actionSheet.html',
                 controller: "ActionSheetCtrl"
+            })
+            .state('spinnerdialog', {
+                url: '/spinnerdialog',
+                templateUrl: 'app/spinnerdialog/spinnerdialog.html',
+                controller: "SpinnerDialogCtrl"
             })
 
 
