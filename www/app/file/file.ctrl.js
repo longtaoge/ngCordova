@@ -4,12 +4,14 @@ angular.module('demo.file.ctrl', [])
 
             $scope.checkdir=function(){
                 // 检查指定路径下的目录是否存在
-                $cordovaFile.checkDir(cordova.file.externalRootDirectory,"dir/other_dir")
+                //$cordovaFile.checkDir(cordova.file.externalRootDirectory,"dir/other_dir")
+                $cordovaFile.checkDir(cordova.file.applicationDirectory,"www/")
                     .then(function (success) {
                        //  success
                         alert("成功"+success);
                     }, function (error) {
                         // error
+
                         alert("error");
                     });
 

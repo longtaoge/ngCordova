@@ -3,7 +3,6 @@ angular.module('demo.geolocation.ctrl', [])
   .controller('GeolocationCtrl', function ($scope, $cordovaGeolocation) {
 
     $scope.getLocation = function () {
-
       $cordovaGeolocation
         .getCurrentPosition({timeout: 10000, enableHighAccuracy: false})
         .then(function (position) {
