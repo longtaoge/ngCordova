@@ -1,5 +1,17 @@
 <ion-view title="Social Sharing">
-	<ion-content padding="true">
+    <ion-content padding="true">
 
-	</ion-content>
+        <button onclick="window.plugins.socialsharing.share('只分享信息', null, null, null)"
+                class="button button-block button-positive">只分享信息
+        </button>
+        
+        <button ng-click="share()" class="button button-block button-positive">share</button>
+        <button ng-click="shareViaTwitter()" class="button button-block button-assertive">shareViaTwitter</button>
+        <button ng-click="shareViaWhatsApp()" class="button button-block button-assertive">shareViaWhatsApp</button>
+        <button ng-click="shareViaFacebook()" class="button button-block button-assertive">shareViaFacebook 不支持Android
+        </button>
+        <button ng-click="shareViaSMS()" class="button button-block button-positive">shareViaSMS</button>
+        <button ng-click="shareViaEmail()" class="button button-block button-positive">shareViaEmail</button>
+        <button ng-click="canShareVia()" class="button button-block button-assertive">canShareVia</button>
+    </ion-content>
 </ion-view>

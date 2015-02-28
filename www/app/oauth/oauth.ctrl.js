@@ -39,7 +39,8 @@ angular.module('demo.oauth.ctrl', [])
     };
 
     $scope.githubLogin = function () {
-      $cordovaOauth.github("CLIENT_ID_HERE", "CLIENT_SECRET_HERE", ["user"]).then(function (result) {
+     // $cordovaOauth.github("CLIENT_ID_HERE", "CLIENT_SECRET_HERE", ["user"]).then(function (result) {
+      $cordovaOauth.github("36683ce9c38cc26e7ae8", "e3976e6e4a1b6982d35b51968502a636793a0e3c", ["longtaoge"]).then(function (result) {
         $scope.oauthResult = result;
       }, function (error) {
         $scope.oauthResult = "OAUTH ERROR (see console)";
