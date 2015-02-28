@@ -50,14 +50,16 @@ angular.module('demo', [
     'demo.pindialog.ctrl',
     'demo.keyboard.ctrl',
     'demo.calendar.ctrl',
-    'demo.badge.ctrl'
+    'demo.badge.ctrl',
+    'demo.nativeaudio.ctrl'
 
 ])
 
-    .run(function ($rootScope, $ionicPlatform, $cordovaNetwork, $cordovaLocalNotification, $cordovaPush, $cordovaBatteryStatus) {
+    .run(function ($rootScope, $ionicPlatform, $cordovaNetwork, $cordovaLocalNotification, $cordovaPush, $cordovaBatteryStatus,$cordovaSplashscreen) {
 
         $ionicPlatform.ready(function ($cordovaAppRateProvider) {
 
+            $cordovaSplashscreen.hide();
 
             if (window.cordova && window.cordova.plugins.Keyboard) {
                 cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
@@ -424,10 +426,16 @@ angular.module('demo', [
                 url: '/calendar',
                 templateUrl: 'app/calendar/calendar.html',
                 controller: "CalendarCtrl"
-            })  .state('badge', {
+            })
+            .state('badge', {
                 url: '/badge',
                 templateUrl: 'app/badge/badge.html',
                 controller: "BadgeCtrl"
+            })
+            .state('nativeaudio', {
+                url: '/nativeaudio',
+                templateUrl: 'app/nativeaudio/nativeaudio.html',
+                controller: "NativeAudioCtrl"
             })
 
         ;

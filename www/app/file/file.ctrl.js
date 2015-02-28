@@ -4,27 +4,34 @@ angular.module('demo.file.ctrl', [])
 
             $scope.checkdir=function(){
                 // 检查指定路径下的目录是否存在
-                //$cordovaFile.checkDir(cordova.file.externalRootDirectory,"dir/other_dir")
-                $cordovaFile.checkDir(cordova.file.applicationDirectory,"www/")
+                $cordovaFile.checkDir(cordova.file.externalRootDirectory,"dir/")
+               // $cordovaFile.checkDir(cordova.file.applicationDirectory,"www/")
                     .then(function (success) {
                        //  success
                         alert("成功"+success);
                     }, function (error) {
-                        // error
-
-                        alert("error");
+                        // error   用于测试目录
+                        alert("asset="+cordova.file.applicationDirectory);
+                        alert("sdcard="+cordova.file.externalRootDirectory+"dir/other_dir"+JSON.stringify(error));
+                        alert("\data/data/<app-id>/="+cordova.file.applicationStorageDirectory);
+                        alert("cache="+cordova.file.cacheDirectory);
+                        alert("files="+cordova.file.dataDirectory);
+                        alert("\<sdcard>\="+cordova.file.externalRootDirectory);
+                        alert("\Android/data/<app-id>/="+cordova.file.externalApplicationStorageDirectory);
+                      //  alert("cache1="+cordova.externalCacheDirectry);
+                        alert("files1"+cordova.file.externalDataDirectory);
                     });
 
             };
             $scope.checkFile=function(){
                //$cordovaFile.checkFile(cordova.file.dataDirectory, "some_file.txt")
-                $cordovaFile.checkFile(cordova.file.externalRootDirectory, "abc.png")
+                $cordovaFile.checkFile(cordova.externalRootDirectory, "abc.png")
                     .then(function (success) {
                         // success
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+cordova.file.externalRootDirectory+"abc.png"+JSON.stringify(error));
                     });
 
             };
@@ -36,7 +43,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error"+error.toLocaleString());
+                        alert("error"+JSON.stringify(error));
                     });
 
             };
@@ -47,7 +54,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
 
@@ -61,7 +68,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
             };
@@ -73,7 +80,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
             };
@@ -85,7 +92,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
 
@@ -99,7 +106,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
 
@@ -111,7 +118,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
 
@@ -125,7 +132,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
             };
@@ -138,7 +145,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
             };
@@ -150,7 +157,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
             };
@@ -163,7 +170,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
 
             };
@@ -175,7 +182,7 @@ angular.module('demo.file.ctrl', [])
                         alert("成功");
                     }, function (error) {
                         // error
-                        alert("error");
+                        alert("error"+JSON.stringify(error));
                     });
             };
 
