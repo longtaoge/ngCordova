@@ -37,6 +37,7 @@
     "https://github.com/driftyco/ionic-plugins-keyboard.git",
     "https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git",
     "https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git",
-    "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git"
+    "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
+    "https://github.com/katzer/cordova-plugin-badge.git"
   ]
 }

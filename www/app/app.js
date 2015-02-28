@@ -49,7 +49,8 @@ angular.module('demo', [
     'demo.sms.ctrl',
     'demo.pindialog.ctrl',
     'demo.keyboard.ctrl',
-    'demo.calendar.ctrl'
+    'demo.calendar.ctrl',
+    'demo.badge.ctrl'
 
 ])
 
@@ -423,6 +424,10 @@ angular.module('demo', [
                 url: '/calendar',
                 templateUrl: 'app/calendar/calendar.html',
                 controller: "CalendarCtrl"
+            })  .state('badge', {
+                url: '/badge',
+                templateUrl: 'app/badge/badge.html',
+                controller: "BadgeCtrl"
             })
 
         ;
