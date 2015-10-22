@@ -15,7 +15,7 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "org.apache.cordova.file",
+  /*  "org.apache.cordova.file",
     "http://github.com/VitaliiBlagodir/cordova-plugin-datepicker",
     "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
     "org.apache.cordova.statusbar",
@@ -40,6 +40,14 @@
     "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
     "https://github.com/katzer/cordova-plugin-badge.git",
     "https://github.com/SidneyS/cordova-plugin-nativeaudio.git",
+    "org.apache.cordova.splashscreen",
+    "cordova-plugin-file-transfer"*/
+
     "org.apache.cordova.splashscreen"
+
+
+  ],
+  "cordovaPlatforms": [
+    "android"
   ]
 }

@@ -1,0 +1,85 @@
+{
+    "count": 5,
+    "inSideProvinceList": [
+        {
+            "cityName": "城市6",
+            "indexOfAQI": 60,
+            "pM25": 60,
+            "rankTrend": -1,
+            "ranking": 6
+        },
+        {
+            "cityName": "城市11",
+            "indexOfAQI": 110,
+            "pM25": 110,
+            "rankTrend": 1,
+            "ranking": 11
+        },
+        {
+            "cityName": "城市12",
+            "indexOfAQI": 120,
+            "pM25": 120,
+            "rankTrend": 1,
+            "ranking": 12
+        },
+        {
+            "cityName": "城市13",
+            "indexOfAQI": 130,
+            "pM25": 130,
+            "rankTrend": 1,
+            "ranking": 13
+        },
+        {
+            "cityName": "城市14",
+            "indexOfAQI": 140,
+            "pM25": 140,
+            "rankTrend": 1,
+            "ranking": 14
+        }
+    ],
+    "outSideProvinList": [
+        {
+            "cityName": "城市15",
+            "indexOfAQI": 150,
+            "pM25": 150,
+            "rankTrend": 1,
+            "ranking": 15
+        },
+        {
+            "cityName": "城市14",
+            "indexOfAQI": 140,
+            "pM25": 140,
+            "rankTrend": 1,
+            "ranking": 14
+        },
+        {
+            "cityName": "城市13",
+            "indexOfAQI": 130,
+            "pM25": 130,
+            "rankTrend": 1,
+            "ranking": 13
+        },
+        {
+            "cityName": "城市12",
+            "indexOfAQI": 120,
+            "pM25": 120,
+            "rankTrend": 1,
+            "ranking": 12
+        },
+        {
+            "cityName": "城市11",
+            "indexOfAQI": 110,
+            "pM25": 110,
+            "rankTrend": 1,
+            "ranking": 11
+        },
+        {
+            "cityName": "城市10",
+            "indexOfAQI": 100,
+            "pM25": 100,
+            "rankTrend": 1,
+            "ranking": 10
+        }
+    ],
+    "page": 0
+}

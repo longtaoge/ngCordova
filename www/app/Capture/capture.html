@@ -1,0 +1,139 @@
+<ion-view title="Capture录制">
+
+
+    <ion-content>
+        <div class="card">
+            <div class="item item-divider">
+                CaptureVideo
+            </div>
+            <div class="item item-image">
+
+                <video width="320" height="240" controls="controls" ng-src="{{myvideo.fullPath}}"
+                       type="{{myvideo.type}}">
+
+                    您的浏览器不支持
+
+                </video>
+            </div>
+
+            <div class="item item-text-wrap">
+                <h2>ViewFileName</h2>
+
+                <p>{{myvideo.name}}</p>
+
+                <h2>localURL</h2>
+
+                <p>{{myvideo.localURL}}</p>
+
+                <h2>fullPath</h2>
+
+                <p>{{myvideo.fullPath}}</p>
+
+                <h2>type</h2>
+
+                <p>{{myvideo.type+""}}</p>
+
+                <h2>lastModifiedDate</h2>
+
+                <p>{{myvideo.lastModifiedDate}}</p>
+
+                <h2>size</h2>
+
+                <p>{{myvideo.size}}</p>
+            </div>
+
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="captureVideo()">
+                CaptureVideo 获取
+            </button>
+        </div>
+        <div class="card">
+            <div class="item item-divider">
+                Capture 照片
+            </div>
+            <div class="item item-image">
+                <img class="item" ng-src="{{myimage.fullPath}}" style="height: 350px;"/>
+            </div>
+            <div class="item item-text-wrap">
+                <h2>ViewFileName</h2>
+
+                <p>{{myimage.name}}</p>
+
+                <h2>localURL</h2>
+
+                <p>{{myimage.localURL}}</p>
+
+                <h2>fullPath</h2>
+
+                <p>{{myimage.fullPath}}</p>
+
+                <h2>type</h2>
+
+                <p>{{myimage.type}}</p>
+
+                <h2>lastModifiedDate</h2>
+
+                <p>{{myimage.lastModifiedDate}}</p>
+
+                <h2>size</h2>
+
+                <p>{{myimage.size}}</p>
+            </div>
+
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="captureImage()">
+                Capture Image 获取
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="item item-divider">
+                Capture audio
+            </div>
+            <div class="item item-image" style="width: 100%;height: 200px">
+              <!--  <audio src="{{myaudio.fullPath}}">
+                    您的浏览器不支持 audio 标签。
+                </audio>-->
+                <audio class="item" ng-src="{{myaudio.fullPath}}" style="height: 50px;width: 100%">
+
+                    您的浏览器不支持 audio 标签。
+                </audio>
+            </div>
+            <div class="item item-text-wrap">
+                <h2>ViewFileName</h2>
+
+                <p>{{myaudio.name}}</p>
+
+                <h2>localURL</h2>
+
+                <p>{{myaudio.localURL}}</p>
+
+                <h2>fullPath</h2>
+
+                <p>{{myaudio.fullPath}}</p>
+
+                <h2>type</h2>
+
+                <p>{{myaudio.type}}</p>
+
+                <h2>lastModifiedDate</h2>
+
+                <p>{{myaudio.lastModifiedDate}}</p>
+
+                <h2>size</h2>
+
+                <p>{{myaudio.size}}</p>
+            </div>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="captureAudio()">
+                Capture audio 获取
+            </button>
+        </div>
+
+
+    </ion-content>
+</ion-view>
+
