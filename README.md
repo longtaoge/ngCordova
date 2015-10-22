@@ -24,3 +24,12 @@ server文件夹下为服务器 测试工程 详情可参见各文件夹下的REA
 ###新版本  new version ###
 
 [https://github.com/longtaoge/ngCordova_Dome/tree/master ](https://github.com/longtaoge/ngCordova_Dome/tree/master)
+
+
+
+### 提示   warning  ###
+
+
+由于 ionic 框架和ngCordova 插件众多，升级频繁，造成本项目维护难度增加，因此，请各位自行添加 cordova 插件。项目中调用方法已完成，只需添加插件即可。
+
+
