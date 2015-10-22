@@ -21,6 +21,6 @@ server文件夹下为服务器 测试工程 详情可参见各文件夹下的REA
 
 
 
-###新版本###
+###新版本  new version ###
 
-[](https://github.com/longtaoge/ngCordova_Dome/tree/master)
+[https://github.com/longtaoge/ngCordova_Dome/tree/master ](https://github.com/longtaoge/ngCordova_Dome/tree/master)
